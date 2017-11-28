@@ -1,0 +1,7 @@
+section -> full width blocks with shadow (z-index 2 so the later ones overlap)
+wrapper -> width constraint so it doesn't go too wide
+col-sm-x -> bootstrap responsive columns
+
+hero is different
+- set a height and z-index to be below others
+
