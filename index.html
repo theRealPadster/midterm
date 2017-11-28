@@ -8,13 +8,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Full Width Pics - Start Bootstrap Template</title>
+    <title>Isaac Maier - How I created my portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
+
+    <style>
+        video {
+            max-width: 100%;
+            max-height: 90vh;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+    </style>
 
   </head>
 
@@ -23,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#">Isaac Maier</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,13 +45,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#structure">Structure</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#sliders">Sliders</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#galleries">Galleries</a>
             </li>
           </ul>
         </div>
@@ -49,21 +59,20 @@
     </nav>
 
     <!-- Header - set the background image for the header in the line below -->
-    <header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
-      <img class="img-fluid d-block mx-auto" src="http://placehold.it/200x200&text=Logo" alt="">
+    <header class="py-5 bg-image-full" style="background-image: url('assets/bg-image-2560x1920-q90.jpg');">
+      <img class="img-fluid d-block mx-auto" src="assets/profile2.jpg" alt="" width="200" style="border-radius: 50%; border: 4px solid white;">
     </header>
 
     <!-- Content section -->
     <section class="py-5">
       <div class="container">
-        <h1>Section Heading</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+        <h1>How I made my portfolio site</h1>
+        <p class="lead">...in 3 (relatively) simple steps</p>
       </div>
     </section>
 
     <!-- Image Section - set the background image for the header in the line below -->
-    <section class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');">
+    <section id="structure" class="py-5 bg-image-full" style="background-image: url('assets/1.png');">
       <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
       <div style="height: 200px;"></div>
     </section>
@@ -71,16 +80,88 @@
     <!-- Content section -->
     <section class="py-5">
       <div class="container">
-        <h1>Section Heading</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+        <h1>1 - Set up structure</h1>
+        <p class="lead">Basic structure is section > wrapper > <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> columns.</p>
+        <p>The site is made up of HTML5 sections, one for each of the coloured horizontal blocks. The sections are the main content groups and have their colours set according to CSS. The z-index is 2 because so they stand out above the hero section, which is -1. </p>
+        <p>
+          Inside the sections, there are wrapper divs. The wrapper divs constrain the content of the sections, by setting a max-width. This way the content is easily readable and doesn't look too sparse on large screens. 
+        </p>
+        <p>
+          Finally, inside the wrapper divs, there are <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> responsive columns. This allows the actual content to reflow and be responsive on a wide variety of screen sizes, from small phones and mobile devices, to large desktop computer displays. 
+        </p>
+        <p>An example from my site:</p>
+        <img src="assets/structure.png">
       </div>
+    </section>
+
+    <!-- Image Section - set the background image for the header in the line below -->
+    <section id="sliders" class="py-5 bg-image-full" style="background-image: url('assets/2.png'); background-position: top;">
+      <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+      <div style="height: 200px;"></div>
+    </section>
+
+    <!-- Content section -->
+    <section class="py-5">
+      <div class="container">
+        <h1>2 - Set up the sliders</h1>
+        <p class="lead">Using the <a href="http://kenwheeler.github.io/slick/" target="_blank">slick</a> jQuery plugin</p>
+        <p>The slick plugin is fairly simple, just include jQuery at the bottom of your body tag and then make a div for the slideshow, with a div inside for each slide. Give your slideshow div a class, and initialize the slick plugin on your page load. </p>
+        <p>When it is done, it will look something like this:</p>
+        <img src="assets/slick-code.png"/>
+        <p>For reference, mine looks more like this:</p>
+        <img src="assets/slick-syntax.png"/>
+      </div>
+    </section>
+
+    <!-- Image Section - set the background image for the header in the line below -->
+    <section id="galleries" class="py-5 bg-image-full" style="background-image: url('assets/3.png'); background-position: top;">
+      <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+      <div style="height: 200px;"></div>
+    </section>
+
+    <!-- Content section -->
+    <section class="py-5">
+      <div class="container">
+        <h1>3 - Set up the image galleries</h1>
+        <p class="lead">Using the <a href="http://lokeshdhakar.com/projects/lightbox2/" target="_blank">Lightbox</a> jQuery plugin</p>
+        <p>The Lightbox plugin is also fairly simple. Include the plugin and CSS, and set up your HTML content. This one runs on page load automatically. </p>
+        <p>You have a link surrounding an image. The link href goes to the large version of the image to show on click, and the small one is the thumbnail to click on. It can just be text, or anything, really. I have combined the slick and Lightbox plugins in my sliders. </p>
+        <p>For reference, mine looks like this:</p>
+        <img src="assets/lightbox-code.png"/>
+        <br><br>
+        <p>
+          There are a few attributes to set.
+        </p>
+        <ul>
+          <li>data-lightbox: for set this to the same for image sets, so they can be navigated in a group</li>
+          <li>data-title: tite/caption of the image</li>
+          <li>data-lazy: use on the image inside the link to lazy load them as required</li>
+          <li>data-link: custom attribute I added to the library myself, so not included in the main one. But it's an external link to another site hosting the image</li>
+      </div>
+    </section>
+
+    <!-- Image Section - set the background image for the header in the line below -->
+    <section class="py-5 bg-image-full">
+      <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+      <video controls>
+          <source src="assets/video.mp4" type="video/mp4">
+            <track label="English" kind="subtitles" src="assets/subtitles.vtt" srclang="en" default>
+        </video>
+    </section>
+
+    <!-- Content section -->
+    <section class="py-5">
+      <div class="container">
+        <h1>And that's all the hard stuff</h1>
+        <p class="lead">There's more, but those are the main areas to focus on. You can check out all the code on my <a href="https://github.com/theRealPadster/theRealPadster.github.io" target="_blank">GitHub</a></p>
+      </div>
+      
     </section>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Isaac Maier 2017</p>
       </div>
       <!-- /.container -->
     </footer>

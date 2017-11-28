@@ -5,3 +5,6 @@ col-sm-x -> bootstrap responsive columns
 hero is different
 - set a height and z-index to be below others
 
+TODO:
+
+fix multiple h1s
